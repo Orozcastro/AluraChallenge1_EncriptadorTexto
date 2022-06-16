@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EncriptadorTexto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="logo">
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <main class="main">
+        <section class="mensaje">
+            <textarea class="card mensaje-text" name="mensaje" id="" cols="30" rows="10"
+                placeholder="Ingrese el texto aqui" required></textarea>
+
+            <div class=" mensaje-btns">
+                <div class="mensaje-alerta">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-circle" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#495057" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="9" />
+                        <line x1="12" y1="8" x2="12" y2="12" />
+                        <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                    <span>Solo letras minusculas y sin acentos</span>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar">Encriptar</button>
+                    <button class="btn-desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="mensajeEncriptado">
+            <img src="img/Muñeco.png" alt="muñeco">
+            <h3 class="mensajeEncriptado-titulo">Ningun mensaje fue <br> encriptado</h3>
+            <p class="">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+/* https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#centrar_elemento */
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    
+    --primario: #0A3871;
+    --light: #E9ECF8;
+    --blanco: #ffffff;
+    --negro: #343A40;
+}
+
+html {
+    box-sizing: border-box; /*para que el borde, margen no afecte el tamaño d elos elementos*/
+    font-size: 62.5%;  /* 1rem= 10px**/
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit; /*hereda del padre osea el html*/
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2; 
+    background-color: #E9ECF8;
+    margin:0px
+}
+header {
+    display: flex;
+    /* align-items: flex-start; */
+    align-items: center;
+    gap: 40px;
+    
+}
+header h1 {
+    margin-bottom: 0;
+}
+
+
+.main {
+    margin:0 3rem;
+    display: flex;
+    gap: 8rem;
+    margin-bottom: 4rem;
+    justify-content: center
+} 
+
+
+.mensaje {
+display: flex;
+flex-direction: column;
+align-items: s;
+padding: 3rem;
+max-width: 70rem;
+}
+.mensaje-text{
+    background-color: #E9ECF8;
+    color: #0A3871;
+    font-size:3.2rem;
+    border: none;
+    max-width: 70rem;
+    min-width: 40rem;
+}
+.mensaje-text::placeholder { 
+    color: #0A3871; 
+}
+.mensaje-text:focus {
+    outline: none;
+}
+/* hacer que no se suban los botones */
+.mensaje .card {
+        flex: 1 1 auto;
+}
+.mensaje-btns {
+
+}
+.mensaje-alerta {
+    color: #495057; 
+    font-size: 1.5rem;
+
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+    /* align-items: stretch; */
+   
+}
+.botones button {
+    text-align: center;
+    font-size:2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; 
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: auto;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+.botones button:first-child {
+    background-color: #0A3871;
+    color:#D8DFE8;
+}
+
+/* resultado del encriptado */
+
+.mensajeEncriptado {
+    /* width: 400px; */
+    min-height: 5.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 2rem 3.2rem; 
+
+}
+.mensajeEncriptado img {
+    margin-top: 3rem;
+}
+.mensajeEncriptado-titulo {
+    font-size: 2.4rem;
+    margin: 1rem auto;
+    color: #343A40;
+}
+.mensajeEncriptado p {
+    color: #495057;
+    margin-top: 0;
+}
+
